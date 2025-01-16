@@ -5,8 +5,11 @@ document.addEventListener('DOMContentLoaded', () => {
   let number = 1;
 
   incrementButton.addEventListener('click', () => {
-      number++;
-      numberDisplay.textContent = number;
+    if (number >== 5){
+      alert("Count to 5")
+    }
+    number++;
+    numberDisplay.textContent = number;
   });
 });
 
